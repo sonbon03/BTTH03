@@ -1,15 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<link rel="stylesheet" href="../../css/layout.css">
-<link rel="stylesheet" href="../../css/media-screen.css">
-<link rel="stylesheet" href="../../css/vendor.min.css">
+<link rel="stylesheet" href="./css/layout.css">
+<link rel="stylesheet" href="./css/media-screen.css">
+<link rel="stylesheet" href="./css/vendor.min.css">
 
 <body>
     <?php
-include "../../header.php";
+include "header.php";
 ?>
     <div class="text-run">
         <p> Wellcome Learning Manage System Page</p>
@@ -28,11 +31,10 @@ include "../../header.php";
         <button><a href="">Users</a></button>
     </div>
     <?php
-include "../../footer.php";
+include "footer.php";
 ?>
-    <script src="../../js/vendor.min.js"></script>
+
+    <script src="./js/vendor.min.js"></script>
 </body>
-
-
 
 </html>
