@@ -14,22 +14,25 @@
     <?php
 include "header.php";
 ?>
-    <div class="text-run">
-        <p> Wellcome Learning Manage System Page</p>
-    </div>
-    <div class="text-run list">
-        <p>List Manage</p>
-    </div>
-    <div class="group-btn d-flex flex-wrap">
-        <button><a href="">Courses</a></button>
-        <button><a href="">CoursesUser</a></button>
-        <button><a href="">Lessons</a></button>
-        <button><a href="">Materials</a></button>
-        <button><a href="">Options</a></button>
-        <button><a href="">Questions</a></button>
-        <button><a href="">Quizzes</a></button>
-        <button><a href="">Users</a></button>
-    </div>
+    <main class="width-page">
+        <div class="text-run ">
+            <p> Wellcome Learning Manage System Page</p>
+        </div>
+        <div class="text-run list ">
+            <p>List Manage</p>
+        </div>
+        <div class="group-btn d-flex flex-wrap">
+            <button><a href="">Courses</a></button>
+            <button><a href="">CoursesUser</a></button>
+            <button><a href="">Lessons</a></button>
+            <button><a href="">Materials</a></button>
+            <button><a href="">Options</a></button>
+            <button><a href="">Questions</a></button>
+            <button><a href="">Quizzes</a></button>
+            <button><a href="">Users</a></button>
+        </div>
+    </main>
+
     <?php
 include "footer.php";
 ?>
