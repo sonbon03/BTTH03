@@ -1,0 +1,132 @@
+﻿/* ================= MEDIA SCREEN ================= */
+@media (min-width: 1200px) {
+	.width-page {
+		width: 1170px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 1199px) {
+	.margin-l_r {
+		margin: 0 30px;
+	}
+}
+
+/* ================= X-Small Devices (Portrait Phones) ================= */
+@media (max-width: 575.98px) {
+
+	td,
+	th {
+		padding: 2px;
+		font-size: 14px;
+	}
+
+	.name-product {
+		font-size: 24px;
+	}
+}
+
+/* ================= Small Devices (Landscape Phones) ================= */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+	td,
+	th {
+		padding: 10px;
+	}
+}
+
+/* ================= Medium Devices (Tablets) ================= */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.space_section {
+		padding: 45px 0;
+	}
+
+
+	h1 {
+		font-size: 35px;
+	}
+
+	h2 {
+		font-size: 27px;
+		margin-bottom: 15px;
+		line-height: 1.25;
+	}
+
+	h3,
+	h4 {
+		font-size: 18px;
+	}
+
+	h5 {
+		font-size: 16px;
+	}
+
+	.text-run p {
+		font-size: 30px;
+	}
+
+	.list p {
+		font-size: 20px;
+	}
+
+}
+
+/* ================= Large Devices (Desktop) ================= */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.space_section {
+		padding: 40px 0;
+	}
+
+	.space_article {
+		padding: 20px 0;
+	}
+
+	h1 {
+		font-size: 40px;
+	}
+
+	h2 {
+		font-size: 30px;
+	}
+
+	h3,
+	h4 {
+		font-size: 20px;
+	}
+
+	h5 {
+		font-size: 17px;
+	}
+
+	h6,
+	p {
+		font-size: 14px;
+	}
+}
+
+/* ================= X-Large (Large Desktop) ================= */
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
+
+/* ================= XX-Large (Huge Desktop) ================= */
+@media (min-width: 1400px) {}
+
+/* ================= Options Devices (All Devices) ================= */
+@media (max-width: 767.98px) {
+
+	.text-run p {
+		font-size: 24px !important;
+		margin: 15px 0;
+	}
+
+	.list p {
+		font-size: 20px !important;
+	}
+
+	.space_section {
+		padding: 30px 0;
+	}
+
+
+
+
+}

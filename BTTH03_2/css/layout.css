@@ -1,0 +1,72 @@
+.text-run {
+    display: flex;
+}
+
+.text-run p {
+    color: #20B486;
+    font-weight: 600;
+    font-size: 50px;
+    text-shadow: 0 0 100px #20B486;
+    animation: text 5s infinite;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    margin: 20px 0;
+
+}
+
+.list p {
+    font-size: 30px;
+}
+
+
+
+.group-btn {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.group-btn button {
+    padding: 8px;
+    border-radius: 12px;
+    border: none;
+    background-color: #A6E1CF;
+
+}
+
+.group-btn a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.group-btn a:hover {
+    color: black;
+}
+
+.space_section {
+    padding: 60px 0;
+}
+
+@keyframes text {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes text {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
