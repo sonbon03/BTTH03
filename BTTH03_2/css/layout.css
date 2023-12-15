@@ -21,36 +21,6 @@
 }
 
 
-
-.group-btn {
-    display: flex;
-    gap: 25px;
-    justify-content: center;
-}
-
-.group-btn button {
-    padding: 8px;
-    border-radius: 12px;
-    border: none;
-    background-color: #A6E1CF;
-
-}
-
-.group-btn a {
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-
-.group-btn a:hover {
-    color: black;
-}
-
-.space_section {
-    padding: 60px 0;
-}
-
 @keyframes text {
     0% {
         width: 0%;
