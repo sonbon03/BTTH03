@@ -27,10 +27,10 @@
                                 <a class="nav-link" href="#">Materials</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Options</a>
+                                <a class="nav-link" href="views/option">Options</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Questions</a>
+                                <a class="nav-link" href="index.php?controller=questions&action=index">Questions</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Quizzes</a>
