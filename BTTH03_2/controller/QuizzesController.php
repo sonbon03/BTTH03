@@ -31,7 +31,7 @@ class QuizzesController{
         }
         public function edit(){
             $id = $_GET['id'];
-            $questions = Quizzes::getIdData();
+            $quizzes = Quizzes::getIdData();
             require '../views/quizzes/edit.php';
         }
     }
