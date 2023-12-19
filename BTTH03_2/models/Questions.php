@@ -95,7 +95,4 @@ class Questions {
         $this->updated_at = $updated_at;
     }
 
-
-
-
 }

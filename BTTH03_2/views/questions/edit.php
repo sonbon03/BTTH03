@@ -13,16 +13,20 @@
             <input type="hidden" name='id' value="<?= $questions['id']?>">
 
             <label for="quiz_id">Mã câu hỏi</label>
-            <select>
+            <select name="selectQuizId" id="selectQuizId">
                 <option value="<?=$questions['quiz_id']?>"><?=$questions['quiz_id']?></option>
                 <?php
-                    foreach($questions as $question):
+
+                    foreach($questionsAllQuizId as $questionAllQuizId):
+                        if ($questionAllQuizId['quiz_id'] != $questions['quiz_id']):
                 ?>
-                    <option value="<?=$question['quiz_id']?>"><?=$question['quiz_id']?></option>
-                <?php endforeach; ?>
+                    <option value="<?=$questionAllQuizId['quiz_id']?>"><?=$questionAllQuizId['quiz_id']?></option>
+                <?php
+                      endif;
+                      endforeach; ?>
             </select>
             <label for="question">Câu hỏi</label>
-            <textarea name="" id="" cols="30" rows="10"><?php $questions['question']?></textarea>
+            <textarea name="question" id="" cols="30" rows="10"><?= $questions['question']?></textarea>
 
             <label for="created_at">Được tạo bởi</label>
             <input type="text" name='created_at' value="<?= $questions['created_at']?>">
