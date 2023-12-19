@@ -2,8 +2,8 @@
 
 class CourseUserController
 {
-    private $users; // Danh sách người dùng
-    private $courses; // Danh sách khóa học
+    private $users;
+    private $courses;
 
     public function __construct()
     {
