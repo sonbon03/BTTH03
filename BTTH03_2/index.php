@@ -1,17 +1,23 @@
 <?php
 require_once 'config.php';
-$controller = isset($_GET["controller"]) ? $_GET["controller"] : 'home';
-$action = isset($_GET["action"]) ? $_GET["action"] : 'index';
 
-$controllerClass = ucfirst($controller) . "Controller";
+// Xử lý yêu cầu và định tuyến tới controller tương ứng
+$controller = isset($_GET['controller']) ? $_GET['controller'] : 'users';
+$action = isset($_GET['action']) ? $_GET['action'] : 'index';
 
-$controllerFile = "controller/$controllerClass.php";
+$controllerClassName = ucfirst($controller) . 'Controller';
+$controllerFileName = 'controller/' . $controllerClassName . '.php';
 
-if(file_exists($controllerFile)){
-    require_once $controllerFile;
-    $controllerInstance  = new $controllerClass();
-    $controllerInstance->$action();
-}else {
-    echo "Controller not found " . $controllerFile;
+if (file_exists($controllerFileName)) {
+    require_once $controllerFileName;
+    $controllerInstance = new $controllerClassName();
+
+    if (method_exists($controllerInstance, $action)) {
+        $controllerInstance->$action();
+    } else {
+        echo 'Action not found.';
+    }
+} else {
+    echo 'Controller not found.';
 }
 ?>
