@@ -20,12 +20,12 @@ class QuizzesController{
             $title = $_POST['title'];
             $created_at = $_POST['created_at'];
             $updated_at = $_POST['updated_at'];
-            $questions = new Quizzes();
-            $questions->setId($id);
-            $questions->setLesson_id($lesson_id);
-            $questions->setTitle($title);
-            $questions->setCreatedAt($created_at);
-            $questions->setUpdatedAt($updated_at);
+            $quizzes = new Quizzes();
+            $quizzes->setId($id);
+            $quizzes->setLesson_id($lesson_id);
+            $quizzes->setTitle($title);
+            $quizzes->setCreatedAt($created_at);
+            $quizzes->setUpdatedAt($updated_at);
 
             header('Location: index.php?controller=quizzes&action=index');
         }
